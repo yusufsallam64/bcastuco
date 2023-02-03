@@ -1,10 +1,12 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
 
 import Navbar from './components/Navbar/Navbar'
+import Landing from './components/Landing/Landing'
+// import About from './compoents/About/About'
+// import MeetUs from './components/MeetUs/MeetUs'
+// import Resources from './components/Resources/Resources'
+// import ContactUs from './components/ContactUs/ContactUs'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,10 +19,18 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-
-        <h1>
-          BCA Student Council
-        </h1>
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        <Landing />
+        
       </main>
     </>
   )
