@@ -2,8 +2,8 @@ import Head from 'next/head'
 
 import Navbar from './components/Navbar/Navbar'
 import Landing from './components/Landing/Landing'
-// import About from './compoents/About/About'
-// import MeetUs from './components/MeetUs/MeetUs'
+import About from './components/About/About'
+import MeetUs from './components/MeetUs/MeetUs'
 // import Resources from './components/Resources/Resources'
 // import ContactUs from './components/ContactUs/ContactUs'
 
@@ -19,18 +19,19 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        <Landing />
-        
+
+        <section>
+          <Landing />
+        </section>
+
+        <section>
+          <About />
+        </section>
+
+        <section>
+          <MeetUs />
+        </section>
+
       </main>
     </>
   )

@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 
 const links = [
-    { name: "About", href: "/about" },
+    { name: "About", href: "#about" },
     { name: "Meet Us", href: "/meet-us" },
     { name: "Resources", href: "/resources" },
     { name: "Contact Us", href: "/contact-us" }
@@ -35,17 +35,18 @@ export default function Navbar() {
             return " transition-all duration-500 h-0 p-0 px-7 "
         } else {
             console.log(links.length * 8)
-            return ` transition-all duration-500 p-3 py-3 px-7 h-${links.length * 8}`
+            // return ` transition-all duration-500 p-3 py-3 px-7 h-${links.length * 8}`
+            return ` transition-all duration-500 p-3 py-3 px-7 h-32`
         }
     }
 
     return (
-        <div className=" sticky top-0 bg-white sm:backdrop-blur-md sm:bg-transparent shadow-md w-full">
+        <div className=" sticky top-0 bg-white sm:backdrop-blur-lg sm:bg-transparent shadow-md w-full">
            <div className="text-lg w-full h-1/5 p-3 pb-2 px-0 grid grid-cols-5 justify-items-center max-sm:hidden">
                 {
                 links.map((route, index) => {
                     let elorder;
-                    index < links.length / 2 ? elorder = "-1;" : elorder = "1;";
+                    index < links.length / 2 ? elorder = "-1" : elorder = "1";
                     return (
                         <div className={" m-auto "} style={{ order: elorder }}>
                             <RouteItem name={route.name} link={route.href} />
@@ -55,12 +56,14 @@ export default function Navbar() {
                 }
 
                 <div>
-                    <Image
-                        src="/logo.webp"
-                        alt="Stuco Logo"
-                        width={50}
-                        height={50}
-                    />
+                    <a href="#">
+                        <Image
+                            src="/logo.webp"
+                            alt="Stuco Logo"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
                 </div>
             </div>
 
@@ -68,12 +71,14 @@ export default function Navbar() {
             <div className="sm:hidden relative">
                 
                 <div className="w-full h-1/5 p-3 flex flex-row place-content-between">
-                    <Image
-                        src="/logo.webp"
-                        alt="Stuco Logo"
-                        width={50}
-                        height={50}
-                    />
+                    <a href="#">
+                        <Image
+                            src="/logo.webp"
+                            alt="Stuco Logo"
+                            width={50}
+                            height={50}
+                        />
+                    </a>
 
                     <button
                         className="flex flex-col h-10 w-10 my-auto mx-2.5 rounded justify-center items-center group"

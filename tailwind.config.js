@@ -8,7 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
+      backgroundImage: {
+        'schoolImage':
+          "linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255,1)), url('/SchoolFrontweb.png')",
+      },
     },
   },
   plugins: [],
