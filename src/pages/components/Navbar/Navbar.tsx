@@ -5,9 +5,9 @@ import Image from 'next/image'
 
 const links = [
     { name: "About", href: "#about" },
-    { name: "Meet Us", href: "/meet-us" },
-    { name: "Resources", href: "/resources" },
-    { name: "Contact Us", href: "/contact-us" }
+    { name: "Meet Us", href: "#meetus" },
+    { name: "Resources", href: "#resources" },
+    { name: "Contact Us", href: "#contactus" }
 ]
 
 export default function Navbar() {
@@ -36,13 +36,13 @@ export default function Navbar() {
         } else {
             console.log(links.length * 8)
             // return ` transition-all duration-500 p-3 py-3 px-7 h-${links.length * 8}`
-            return ` transition-all duration-500 p-3 py-3 px-7 h-32`
+            return ` transition-all duration-500 h-32`
         }
     }
 
     return (
-        <div className=" sticky top-0 bg-white sm:backdrop-blur-lg sm:bg-transparent shadow-md w-full">
-           <div className="text-lg w-full h-1/5 p-3 pb-2 px-0 grid grid-cols-5 justify-items-center max-sm:hidden">
+        <div className=" sticky top-0  sm:backdrop-blur-lg sm:bg-transparent shadow-md w-full z-20">
+           <div className="text-lg w-full h-1/5 p-3 pb-2 px-0 grid grid-cols-5 justify-items-center bg-offwhite/50 max-sm:hidden">
                 {
                 links.map((route, index) => {
                     let elorder;
@@ -68,9 +68,9 @@ export default function Navbar() {
             </div>
 
 
-            <div className="sm:hidden relative">
+            <div className="sm:hidden relative z-20 bg-offwhite">
                 
-                <div className="w-full h-1/5 p-3 flex flex-row place-content-between">
+                <div className="w-screen h-1/5 p-3 flex flex-row place-content-between">
                     <a href="#">
                         <Image
                             src="/logo.webp"
@@ -106,10 +106,12 @@ export default function Navbar() {
                     </button>
                 </div>
 
-                <div className={"p-0 pt-0 h-0 flex flex-col text-right px-7 overflow-hidden w-full bg-white shadow-md " + setTransition(menuOpen)}>
+                <div className={"p-0 pt-0 h-0 flex flex-col text-right px-7 overflow-hidden w-screen bg-offwhite shadow-md " + setTransition(menuOpen)}>
                     {links.map((route) => {
                         return (
-                            <RouteItem name={route.name} link={route.href} />
+                            <div className="pb-1.5" onClick={() => { setIsOpen(!isOpen); toggleMenu(); } }>
+                                <RouteItem name={route.name} link={route.href} />
+                            </div>
                         )
                     })}
                 </div> 

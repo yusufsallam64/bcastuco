@@ -7,7 +7,7 @@ interface RouteItemProps {
 
 export default function RouteItem(props : RouteItemProps) {
     return (
-        <Link className="py-1 text-sm hover:text-yellow-400" href={props.link}>
+        <Link className="py-[.2rem] text-[1rem] hover:text-fadedyellow transition delay-[10ms]" href={props.link}>
             {props.name}
         </Link>
     )
