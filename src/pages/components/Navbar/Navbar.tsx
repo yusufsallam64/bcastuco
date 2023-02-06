@@ -41,14 +41,14 @@ export default function Navbar() {
     }
 
     return (
-        <div className=" sticky top-0  sm:backdrop-blur-lg sm:bg-transparent shadow-md w-full z-20">
+        <div className=" sticky top-0 sm:backdrop-blur-lg sm:bg-transparent shadow-md w-full z-20">
            <div className="text-lg w-full h-1/5 p-3 pb-2 px-0 grid grid-cols-5 justify-items-center bg-offwhite/50 max-sm:hidden">
                 {
                 links.map((route, index) => {
                     let elorder;
                     index < links.length / 2 ? elorder = "-1" : elorder = "1";
                     return (
-                        <div className={" m-auto "} style={{ order: elorder }}>
+                        <div className={" m-auto "} style={{ order: elorder }} key={index.toString()}>
                             <RouteItem name={route.name} link={route.href} />
                         </div>
                     )
@@ -107,9 +107,9 @@ export default function Navbar() {
                 </div>
 
                 <div className={"p-0 pt-0 h-0 flex flex-col text-right px-7 overflow-hidden w-screen bg-offwhite shadow-md " + setTransition(menuOpen)}>
-                    {links.map((route) => {
+                    {links.map((route, index) => {
                         return (
-                            <div className="pb-1.5" onClick={() => { setIsOpen(!isOpen); toggleMenu(); } }>
+                            <div className="pb-1.5" key={index.toString()} onClick={() => { setIsOpen(!isOpen); toggleMenu(); } }>
                                 <RouteItem name={route.name} link={route.href} />
                             </div>
                         )

@@ -17,7 +17,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'schoolImage':
-          "linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255,1)), url('/SchoolFrontweb.png')",
+          "linear-gradient(to bottom, rgba(255,255,255,0) 95%, rgba(255,255,255,1)), url('/SchoolFrontweb.jpg')",
       },
       colors: {
         'fadedyellow': '#E7B22E',
@@ -26,6 +26,9 @@ module.exports = {
         'midgray': '#A19694',
         'intergray': '#5D5852',
         'royalpurple': '#6143B7'
+      },
+      fontWeight: {
+        'incrediblybold': '1000'
       },
     },
   },
