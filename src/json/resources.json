@@ -1,14 +1,23 @@
 {
     "resources": [
         {
-            "name": "Stuco Constitution",
+            "name": "Stuco constitution",
             "type": "Link",
-            "url": "asdf"
+            "description": "The official constitution of the BCA Student Council",
+            "url": "https://www.bcastuco.com/constitution.pdf"
         },
         {
-            "name": "BCAR.FUN",
+            "name": "bcar.fun",
             "type": "link",
-            "url": "aadfda"
+            "description": "A collection of useful & shortened links",
+            "url": "https://bcar.fun/",
+            "override": true
+        },
+        {
+            "name": "Student Handbook",
+            "type": "pdf",
+            "description": "Student handbook for the 2022-2023 school year",
+            "url": "https://www.bergen.org/cms/lib/NJ02213295/Centricity/Domain/688/studentHandbook_22_23_sep9.pdf"
         }
     ]
 }
