@@ -11,7 +11,6 @@ function checkOverride(override: boolean | undefined): boolean {
 }
 
 export default function ResourceEntry(props : Resource): JSX.Element {
-    console.log(props.name.split(" "));
     return (
         <Link href={props.url}>
             <div className="w-60 h-52 m-7 py-6 px-3 bg-offwhite/50 shadow-md hover:shadow-md hover:shadow-fadedyellow/50 hover:bg-offwhite/80 rounded-md flex flex-col place-content-between">

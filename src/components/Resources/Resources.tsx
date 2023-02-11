@@ -16,7 +16,7 @@ export interface Resource {
 }
 
 export default function Resources() {
-    const { data, error } = useSWR('/api/staticdata', fetcher);
+    const { data, error } = useSWR('/api/staticdataresources', fetcher);
     //Handle the error state
     if (error) return <div className="w-3/5 m-auto text-center text-2xl p-10">Failed to load resources</div>;
     //Handle the loading state

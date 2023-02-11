@@ -1,0 +1,81 @@
+{
+    "members": [
+        {
+            "name": "Arham Shah",
+            "position": "President",
+            "bio": "asdf"
+        },
+        {
+            "name": "Angela Li",
+            "position": "Vice President",
+            "bio": "asdf"
+        },
+        {
+            "name": "Andrea Kim",
+            "position": "Secretary",
+            "bio": "asdf"
+        },
+        {
+            "name": "Eesha Bhatia",
+            "position": "Treasurer",
+            "bio": "asdf"
+        },
+        {
+            "name": "Yusuf Sallam",
+            "position": "Webmaster",
+            "bio": "asdf"
+        },
+        {
+            "name": "Samantha Seneres",
+            "position": "PR Director",
+            "bio": "asdf"
+        },
+        {
+            "name": "Rachel Park",
+            "position": "NSC Director",
+            "bio": "asdf"
+        },
+        {
+            "name": "Jolyn He",
+            "position": "Artistic Director",
+            "bio": "asdf"
+        },
+
+        {
+            "name": "Arnav Patel",
+            "position": "2025 Class Representative",
+            "bio": "asdf"
+        },
+
+        {
+            "name": "Chloe Cho",
+            "position": "2025 Class Representative",
+            "bio": "asdf"
+        },
+        {
+            "name": "Hyaemhin Moon",
+            "position": "2026 Class Representative",
+            "bio": "asdf"
+        },
+        {
+            "name": "Claire Sim",
+            "position": "2026 Class Representative",
+            "bio": "asdf"
+        },
+        {
+            "name": "Jisae Son",
+            "position": "2024 Liason",
+            "bio": "asdf"
+        },
+        {
+            "name": "Anthony Kim",
+            "position": "2025 Liason",
+            "bio": "asdf"
+        },
+        {
+            "name": "Justin Kim",
+            "position": "2026 Liason",
+            "bio": "asdf"
+        }
+    ]
+}
