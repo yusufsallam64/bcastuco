@@ -2,10 +2,12 @@ import SectionHeader from "../SectionHeader/SectionHeader"
 import CouncilEntry from "../CouncilEntry/CouncilEntry"
 
 import useSWR from 'swr';
+import { Key } from "react";
 
 const fetcher = (url : URL) => fetch(url).then((res) => res.json());
 
 export interface Member {
+    key: Key,
     name: string,
     position: string,
     bio: string
@@ -25,9 +27,9 @@ export default function MeetUs() {
                 <div className="flex flex-wrap flex-row place-content-evenly pt-7">
                     {
 
-                        council["members"].map((councilmember : Member, index: Number) => {
+                        council["members"].map((councilmember : Member) => {
                             return (
-                                <CouncilEntry name={councilmember.name} position={councilmember.position} bio={councilmember.bio} />
+                                <CouncilEntry key={councilmember.name + councilmember.position} name={councilmember.name} position={councilmember.position} bio={councilmember.bio} />
                         )})
 
                     }

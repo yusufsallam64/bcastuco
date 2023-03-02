@@ -32,9 +32,9 @@ export default function Resources() {
                 </h3>
                 <div className="flex flex-wrap flex-row place-content-evenly pt-7">
                     {
-                        resources["resources"].map((resource : Resource, index: Number) => {
+                        resources["resources"].map((resource : Resource,) => {
                             return (
-                                <ResourceEntry name={resource.name} url={resource.url} type={resource.type} description={resource.description} override={resource.override} />
+                                <ResourceEntry key={resource.name + resource.type} name={resource.name} url={resource.url} type={resource.type} description={resource.description} override={resource.override} />
                         )})
                     }
                 </div>                                    

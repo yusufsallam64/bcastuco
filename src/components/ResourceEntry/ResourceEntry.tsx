@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Resource } from "../Resources/Resources";
 
 function checkOverride(override: boolean | undefined): boolean {
-    console.log(typeof override);
     if(typeof(override) !== 'undefined' && override === true) {
         return true;
     }

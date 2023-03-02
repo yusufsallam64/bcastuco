@@ -34,7 +34,6 @@ export default function Navbar() {
         if (!menuOpen) {
             return " transition-all duration-500 h-0 p-0 px-7 "
         } else {
-            console.log(links.length * 8)
             // return ` transition-all duration-500 p-3 py-3 px-7 h-${links.length * 8}`
             return ` transition-all duration-500 h-32`
         }
