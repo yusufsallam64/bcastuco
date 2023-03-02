@@ -4,7 +4,7 @@
             "name": "Stuco constitution",
             "type": "Link",
             "description": "The official constitution of the BCA Student Council",
-            "url": "https://www.bcastuco.com/constitution.pdf"
+            "url": "/constitution.pdf"
         },
         {
             "name": "bcar.fun",
