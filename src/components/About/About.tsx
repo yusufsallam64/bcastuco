@@ -10,7 +10,7 @@ export default function About() {
                     <b className="text-fadedyellow">We are the Bergen County Academies Student Council.</b>
                     <br></br>
                     <br></br> 
-                    As the BCA Student Council, we uphold the values of the BCA Student Council Consitution and we strive to achieve a better educational experience for all students. We believe it is critical to fulfill these responsibilities and to live up to all the duties we undertake, and we are committed to providing all students a voice.
+                    As the BCA Student Council, we uphold the values of the BCA Student Council Constitution and we strive to achieve a better educational experience for all students. We believe it is critical to fulfill these responsibilities and to live up to all the duties we undertake, and we are committed to providing all students a voice.
                 </p>
 
             </div>
