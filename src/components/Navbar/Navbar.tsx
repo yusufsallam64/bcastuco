@@ -59,8 +59,8 @@ export default function Navbar() {
                         <Image
                             src="/logo.webp"
                             alt="Stuco Logo"
-                            width={50}
-                            height={50}
+                            width={55}
+                            height={55}
                         />
                     </a>
                 </div>
